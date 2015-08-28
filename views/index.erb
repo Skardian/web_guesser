@@ -1,7 +1,7 @@
 <html>
 <head></head>
 <body>
-    <p><%= message %></p>
+    <p><%= "#{guess} #{guess.nil? ? '' : 'is'} #{message}" %></p>
     <p>The SECRET NUMBER is <%= number.to_s.rjust(2,'0') %></p>
 <form>
   <input type='text' name='guess' />
